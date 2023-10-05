@@ -1,11 +1,28 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import { useState } from 'react'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [count, setCount] = useState(0);
+
+  const handleClick1 = () => {
+    setCount(count+1);
+  }
+  const handleClick3 = () => {
+    setCount(count+3);
+  }
+  const handleClick5 = () => {
+    setCount(count+5);
+  }
+  const zero = () => {
+    setCount(0);
+  }
+ 
   return (
     <>
       <Head>
@@ -17,97 +34,55 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
+            Target Counter
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+        </div>
+
+      <div className={styles.congo}>
+        <div>
+          {count >=50 && count < 100 ? (
+            <p>Take some break,Snack Time🍌🍌🍌</p>
+          ):
+          (null)
+          }
+        </div>
+
+        <div>
+          {count >= 100 && count < 180 ? (
+            <p>You can do it, push harder</p>
+          ):
+          (null)
+          }
+        </div>
+
+        <div >
+          {count >= 180 && count < 240 ? (
+            <p>Just a few miles away🛣️🛣️</p>
+          ):
+          (null)
+          }
+        </div>
+
+        <div>
+          {count >= 240 ? (
+            <p>Target Completed, Hurray🎉🥳🎉</p>
+          ):
+          (null)
+          }
+        </div>
         </div>
 
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+          <b>{count}</b>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+        <div>
+          <button className={styles.button1} onClick={handleClick1} >+1</button>
+          <button className={styles.button3} onClick={handleClick3} >+3</button>
+          <button className={styles.button5} onClick={handleClick5} >+5</button>
         </div>
+        
+        <button className={styles.button0} onClick={zero} >Reset</button>
+
       </main>
     </>
   )

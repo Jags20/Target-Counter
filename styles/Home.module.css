@@ -9,13 +9,26 @@
 
 .description {
   display: inherit;
-  justify-content: inherit;
+  justify-content: center;
   align-items: inherit;
-  font-size: 0.85rem;
+  font-size: 2.5rem;
+  font-weight: 900;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+
+.congo{
+  background-color: cadetblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 500;
+  /* margin-bottom: 0%; */
+  padding: 10px;
+  border: 1px solid grey;
+  z-index: 4;
+  text-decoration: dotted;
 }
 
 .description a {
@@ -74,10 +87,45 @@
 
 .center {
   display: flex;
+  border: 4px solid grey;
+  border-radius: 10%;
+  background-color: white;
+  padding: 1.4rem 8.5rem 1.4rem 8.5rem;
+  font-size: 9rem;
+  color: rgb(0, 0, 0);
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
+}
+
+.button1{
+  margin-right: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: larger;
+  background-color: rgb(138, 126, 16);
+}
+
+.button3{
+  margin-right: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: larger;
+  background-color: rgb(18, 170, 137);
+}
+
+.button5{
+  margin-right: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: larger;
+  background-color: yellowgreen;
+}
+
+.button0{
+  margin-right: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: larger;
+  background-color: rgb(156, 8, 8);
+  color: white;
 }
 
 .center::before {
