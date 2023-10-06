@@ -10,6 +10,9 @@ export default function Home() {
 
   const [count, setCount] = useState(0);
 
+  const handleClickNeg = () => {
+    setCount(count-1);
+  }
   const handleClick1 = () => {
     setCount(count+1);
   }
@@ -33,12 +36,19 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <p>
+          <p className={styles.heading}>
             Target Counter
           </p>
         </div>
 
       <div className={styles.congo}>
+      <div>
+          {count <0 ? (
+            <p>Bhaisahab ye kis line m aa gye hain ap</p>
+          ):
+          (null)
+          }
+        </div>
         <div>
           {count >=50 && count < 100 ? (
             <p>Take some break,Snack Time🍌🍌🍌</p>
@@ -64,8 +74,16 @@ export default function Home() {
         </div>
 
         <div>
-          {count >= 240 ? (
+          {count >= 240 && count < 275 ? (
             <p>Target Completed, Hurray🎉🥳🎉</p>
+          ):
+          (null)
+          }
+        </div>
+
+        <div>
+          {count >= 275 ? (
+           <p className={styles.para}>Bass kar bhai, company ka share leke hi manega kya</p>
           ):
           (null)
           }
@@ -76,6 +94,7 @@ export default function Home() {
           <b>{count}</b>
         </div>
         <div>
+        <button className={styles.buttonNeg} onClick={handleClickNeg} >-1</button>
           <button className={styles.button1} onClick={handleClick1} >+1</button>
           <button className={styles.button3} onClick={handleClick3} >+3</button>
           <button className={styles.button5} onClick={handleClick5} >+5</button>
