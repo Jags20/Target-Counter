@@ -5,7 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: black;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,4,4,1) 35%, rgba(0,212,255,1) 100%);
+  /* background-color: black; */
 }
 
 .description {
@@ -104,6 +106,10 @@
   align-items: center;
   position: relative;
   /* padding: 4rem 0; */
+}
+
+.center:hover{
+  scale: 1.5;
 }
 
 .buttonNeg{
