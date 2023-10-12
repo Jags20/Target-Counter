@@ -106,6 +106,7 @@ export default function Home() {
         </div>
         
         <button className={styles.button0} onClick={zero} >Reset</button>
+        <p className={styles.footer_menu}>Made with Love ❤️</p>
 
       </main>
     </>
