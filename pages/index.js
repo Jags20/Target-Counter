@@ -10,9 +10,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   const [count, setCount] = useState(0);
+  // const [clas, setClas] = useState("");
 
   useEffect ( () => {
-    document.title = `Total : ${count}`;
+    document.title = `${count}`;
   },[count]);
 
   const handleClickNeg = () => {
@@ -20,6 +21,10 @@ export default function Home() {
   }
   const handleClick1 = () => {
     setCount(count+1);
+  }
+  const changeClass = () => {
+    setCount(count+2);
+    // setClas("button_change");
   }
   const handleClick3 = () => {
     setCount(count+3);
@@ -42,7 +47,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
           <p className={styles.heading}>
-            Target Counter
+            Count Your Progress
           </p>
         </div>
 
@@ -94,13 +99,15 @@ export default function Home() {
           }
         </div>
         </div>
-
-        <div className={styles.center}>
-          <b className={styles.b}>{count}</b>
+        <div className={styles.outer_line}>
+          <div className={styles.center}>
+            <b className={styles.b}>{count}</b>
+          </div>
         </div>
         <div>
         <button className={styles.buttonNeg} onClick={handleClickNeg} >-1</button>
-          <button className={styles.button1} onClick={handleClick1} >+1</button>
+          <button className={styles.button1} onClick={handleClick1} ><span className={styles.button_effect1}>+1</span></button>
+          <button className={styles.button_change} onClick={changeClass}>+2</button>
           <button className={styles.button3} onClick={handleClick3} >+3</button>
           <button className={styles.button5} onClick={handleClick5} >+5</button>
         </div>
