@@ -31,8 +31,8 @@
 }
 
 .meter_design{
-  width: 400px;
-  height: 25px;
+  width: 25rem;
+  height: 2rem;
 }
      /* Set the fill color */
      .meter_design::-webkit-meter-bar {
@@ -63,19 +63,19 @@
   gap: 0.5rem;
 }
 
-.description p {
+/* .description p {
   position: relative;
   margin: 0;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
-  /* border: 1px solid rgba(var(--callout-border-rgb), 0.3); */
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
-}
+} */
 
 .heading{
   /* background-image: linear-gradient(to right, #ff0909, #e9cacd, #1dd12c); */
   /* background: repeating-radial-gradient(circle,#83220ae3, transparent 20%); */
-  background-size: 3em 3em;
+  /* background-size: 3em 3em; */
   /* background-color: #a01212; */
   /* opacity: 0.8;
   background-image: radial-gradient(circle at center center, #311717, #bcc2db), 
@@ -84,8 +84,8 @@
   font-size: 3rem;
   color: whitesmoke;
   /* display: none; */
-  background-clip: text;
-  color: transparent;
+  /* background-clip: text; */
+  /* color: transparent; */
 }
 
 .code {
