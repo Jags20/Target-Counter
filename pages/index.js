@@ -10,12 +10,15 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   const [count, setCount] = useState(0);
-  // const [clas, setClas] = useState("");
+  const [fly, setFly] = useState(false);
 
   useEffect ( () => {
     document.title = `${count}`;
   },[count]);
 
+  const animateChange = () => {
+    setFly(!fly);
+  }
   const handleClickNeg = () => {
     setCount(count-1);
   }
@@ -24,7 +27,6 @@ export default function Home() {
   }
   const changeClass = () => {
     setCount(count+2);
-    // setClas("button_change");
   }
   const handleClick3 = () => {
     setCount(count+3);
@@ -46,9 +48,11 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <p className={styles.heading}>
+          <meter value={count} max="240">
+            {/* <p className={styles.heading}>
             Count Your Progress
-          </p>
+           </p> */}
+          </meter>
         </div>
 
       <div className={styles.congo}>
@@ -61,7 +65,7 @@ export default function Home() {
         </div>
         <div>
           {count >=50 && count < 100 ? (
-            <p>Take some break,Snack Time🍌🍌🍌</p>
+            <p>Take some break,Snack Time🍨🍨🍨</p>
           ):
           (null)
           }
@@ -104,13 +108,25 @@ export default function Home() {
             <b className={styles.b}>{count}</b>
           </div>
         </div>
-        <div>
-        <button className={styles.buttonNeg} onClick={handleClickNeg} >-1</button>
-          <button className={styles.button1} onClick={handleClick1} ><span className={styles.button_effect1}>+1</span></button>
+        <div className={styles.button_cont}>
+        <button className={styles.buttonNeg} onClick={handleClickNeg}>-1</button>
+        {/* Added multiple class with condition and multiple function */}
+          <button className={`${styles.button1} ${fly?null:styles["wwwch"]}`} onClick={() => {
+          handleClick1()
+          animateChange()
+        }} >+1</button>
           <button className={styles.button_change} onClick={changeClass}>+2</button>
           <button className={styles.button3} onClick={handleClick3} >+3</button>
           <button className={styles.button5} onClick={handleClick5} >+5</button>
         </div>
+
+        {/* We add multiple class in next like that */}
+        {/* <div className={`${styles.mob} ${styles.mobile}`}> */}
+          {/* <div className={fly? styles["wwwch"]: null} onClick={animateChange}>
+            <button>gffgffjff</button>
+          </div> */}
+          {/* <button>hrrrrrr</button> */}
+        {/* </div> */}
         
         <button className={styles.button0} onClick={zero} >Reset</button>
         <p className={styles.footer_menu}>Made with Love ❤️</p>
@@ -119,3 +135,5 @@ export default function Home() {
     </>
   )
 }
+// className={styles.buttonNeg}
+// className={styles.button1} onClick={handleClick1}

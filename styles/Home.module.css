@@ -7,9 +7,9 @@
   height: 100vh;
   position: relative;
   /* background: rgb(2,0,36); */
-  background-color: #213fb6;
+  background-color: #f80101;
   opacity: 0.8;
-  background-image: radial-gradient(circle at center center, #000000, #0629ae), 
+  background-image: radial-gradient(circle at center center, #3a3232, #d51717), 
                     repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
   background-blend-mode: multiply;
   /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,4,4,1) 35%, rgba(0,212,255,1) 100%); */
@@ -114,10 +114,10 @@
   border: 30px;
   /* background: repeating-radial-gradient(circle,#e43105e3, transparent 20%); */
   background-size: 3em 3em;
-  background-color: #081341;
+  background-color: #d00000;
   opacity: 0.8;
-  background-image: radial-gradient(circle at center center, #000000, #0629ae), 
-                    repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
   background-blend-mode: multiply;
   height: 450px;
   width: 450px;
@@ -200,7 +200,13 @@
   animation: none;
 }
 
-
+.mob{
+  background-color: #001cf3;
+  padding: 20px;
+}
+.mobile{
+  margin: 50px;
+}
 .center {
   display: flex;
   /* align-items: center; */
@@ -215,9 +221,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* animation:10s infinite anim; */
-   -webkit-animation: ping 2.0s ease-in-out infinite both;
-	        animation: ping 2.0s ease-in-out infinite both;
+  animation:10s infinite anim;
+   /* -webkit-animation: ping 2.0s ease-in-out infinite both;
+	        animation: ping 2.0s ease-in-out infinite both; */
 }
 /* @keyframes anim {
   0%{transform: rotate(0);}
@@ -264,18 +270,22 @@
   box-shadow: 0px 0px 150px rgb(209, 202, 202),0px 0px 150px rgb(218, 214, 214);
 }
 
+
+.button_cont{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
 .buttonNeg{
   margin-right: 30px;
   padding: 10px 30px 10px 30px;
   font-size: larger;
   /* background-color: red; */
-  background: repeating-radial-gradient(circle,#e43105e3, transparent 20%);
-        background-size: 3em 3em;
-        background-color: #667aca;
-        opacity: 0.8;
-        background-image: radial-gradient(circle at center center, #000000, #7582b8), 
-                          repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   border: none;
   color: white;
   border-radius: 8%;
@@ -294,13 +304,12 @@
   position: relative;
   font-size: larger;
   /* background-color: rgb(138, 126, 16); */
-  background: repeating-radial-gradient(circle,#e43105e3, transparent 20%);
-        background-size: 3em 3em;
-        background-color: #667aca;
-        opacity: 0.8;
-        background-image: radial-gradient(circle at center center, #000000, #7582b8), 
-                          repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   border: none;
   color: white;
   border-radius: 8%;
@@ -316,13 +325,12 @@
   padding: 10px 30px 10px 30px;
   font-size: larger;
   /* background-color: rgb(59, 16, 138); */
-  background: repeating-radial-gradient(circle,#e43105e3, transparent 20%);
-        background-size: 3em 3em;
-        background-color: #667aca;
-        opacity: 0.8;
-        background-image: radial-gradient(circle at center center, #000000, #7582b8), 
-                          repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   border: none;
   color: white;
   border-radius: 8%;
@@ -338,13 +346,12 @@
   padding: 10px 30px 10px 30px;
   font-size: larger;
   /* background-color: rgb(3, 148, 51); */
-  background: repeating-radial-gradient(circle,#e43105e3, transparent 20%);
-        background-size: 3em 3em;
-        background-color: #667aca;
-        opacity: 0.8;
-        background-image: radial-gradient(circle at center center, #000000, #7582b8), 
-                          repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   border: none;
   color: white;
   border-radius: 8%;
@@ -360,13 +367,12 @@
   padding: 10px 30px 10px 30px;
   font-size: larger;
   /* background-color: cyan; */
-  background: repeating-radial-gradient(circle,#e43105e3, transparent 20%);
-        background-size: 3em 3em;
-        background-color: #667aca;
-        opacity: 0.8;
-        background-image: radial-gradient(circle at center center, #000000, #7582b8), 
-                          repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   border: none;
   color: white;
   border-radius: 8%;
@@ -381,7 +387,12 @@
   /* margin-right: 20px; */
   padding: 10px 30px 10px 30px;
   font-size: larger;
-  background-color: rgb(156, 8, 8);
+  background-size: 3em 3em;
+  background-color: #d00000;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b), 
+                    repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   color: white;
   border: none;
   border-radius: 8%;
@@ -389,8 +400,11 @@
 .button0:hover {
   box-shadow: 5px 10px 8px #f00404;
   scale: 1.2;
-  cursor:grabbing;
-  animation: numberAnimation 2s;    
+  cursor:grabbing;    
+}
+
+.wwwch{
+  animation: numberAnimation 2s;
 }
 @keyframes numberAnimation {
   0% {
