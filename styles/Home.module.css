@@ -30,6 +30,21 @@
   font-family: var(--font-mono);
 }
 
+.meter_design{
+  width: 400px;
+  height: 25px;
+}
+     /* Set the fill color */
+     .meter_design::-webkit-meter-bar {
+      background: rgb(255, 238, 238); /* Background color for the meter */
+  }
+
+  .meter_design::-webkit-meter-optimum-value,
+  .meter_design::-webkit-meter-suboptimum-value,
+  .meter_design::-webkit-meter-even-less-good-value {
+      background: rgb(243, 4, 4); /* Change the fill color for different value ranges */
+  }
+
 .congo{
   /* background-color: cadetblue; */
   font-family: 'Times New Roman', Times, serif;
@@ -62,11 +77,12 @@
   /* background: repeating-radial-gradient(circle,#83220ae3, transparent 20%); */
   background-size: 3em 3em;
   /* background-color: #a01212; */
-  opacity: 0.8;
+  /* opacity: 0.8;
   background-image: radial-gradient(circle at center center, #311717, #bcc2db), 
                     repeating-radial-gradient(circle at center center, #d61111, #001cf3, 10px, transparent 20px, transparent 10px);
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   font-size: 3rem;
+  color: whitesmoke;
   /* display: none; */
   background-clip: text;
   color: transparent;

@@ -48,12 +48,11 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <meter value={count} max="240">
-            {/* <p className={styles.heading}>
+        <p className={styles.heading}>
             Count Your Progress
-           </p> */}
-          </meter>
+           </p>
         </div>
+        <meter value={count} max="240" className={styles.meter_design}></meter>
 
       <div className={styles.congo}>
       <div>
