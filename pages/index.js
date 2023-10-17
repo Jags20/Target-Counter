@@ -52,9 +52,9 @@ export default function Home() {
             Count Your Progress
            </p>
         </div>
-        <meter value={count} max="240" className={styles.meter_design}></meter>
-
+        
       <div className={styles.congo}>
+      <meter value={count} max="240" className={styles.meter_design}></meter>
       <div>
           {count <0 ? (
             <p>Bhaisahab ye kis line m aa gye hain ap</p>
