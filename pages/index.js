@@ -11,6 +11,7 @@ export default function Home() {
 
   const [count, setCount] = useState(0);
   const [fly, setFly] = useState(false);
+  const [name, setName] = useState('');
 
   useEffect ( () => {
     document.title = `${count}`;
@@ -37,6 +38,9 @@ export default function Home() {
   const zero = () => {
     setCount(0);
   }
+  const user = () => {
+    setName(prompt("what's your name?"));
+  }
  
   return (
     <>
@@ -48,9 +52,10 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-        <p className={styles.heading}>
-            Count Your Progress
-           </p>
+          <div className={styles.hdp1}></div>
+        <p className={styles.heading}>Count Your Progress</p>
+        <span className={styles.name}>{name}</span>
+           <div className={styles.hdp2}></div>
         </div>
         
       <div className={styles.congo}>
@@ -127,7 +132,13 @@ export default function Home() {
           {/* <button>hrrrrrr</button> */}
         {/* </div> */}
         
-        <button className={styles.button0} onClick={zero} >Reset</button>
+        <button className={styles.button0} 
+        // onClick={zero}
+        onClick = { () => {
+          zero()
+          user()
+        }}
+        >Reset</button>
         <p className={styles.footer_menu}>Made with Love ❤️</p>
 
       </main>
