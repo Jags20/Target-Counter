@@ -11,6 +11,9 @@ export default function Home() {
 
   const [count, setCount] = useState(0);
   const [fly, setFly] = useState(false);
+  const [run, setRun] = useState(false);
+  const [sum, setSum] = useState(false);
+  const [incr, setIncr] = useState(false);
   const [name, setName] = useState('');
 
   useEffect ( () => {
@@ -19,6 +22,15 @@ export default function Home() {
 
   const animateChange = () => {
     setFly(!fly);
+  }
+  const animateChange0 = () => {
+    setRun(!run);
+  }
+  const animateChange1 = () => {
+    setSum(!sum);
+  }
+  const animateChange2 = () => {
+    setIncr(!incr);
   }
   const handleClickNeg = () => {
     setCount(count-1);
@@ -130,9 +142,27 @@ export default function Home() {
           handleClick1()
           animateChange()
         }} >+1</button>
-          <button className={styles.button_change} onClick={changeClass}>+2</button>
-          <button className={styles.button3} onClick={handleClick3} >+3</button>
-          <button className={styles.button5} onClick={handleClick5} >+5</button>
+          <button 
+          // className={styles.button_change} onClick={changeClass}
+          className={`${styles.button_change} ${run?null:styles["wwwch2"]}`} onClick={() => {
+            changeClass()
+            animateChange0()
+          }} 
+          >+2</button>
+          <button 
+          // className={styles.button3} onClick={handleClick3} 
+          className={`${styles.button3} ${sum?null:styles["wwwch3"]}`} onClick={() => {
+            handleClick3()
+            animateChange1()
+          }}
+          >+3</button>
+          <button 
+          // className={styles.button5} onClick={handleClick5} 
+          className={`${styles.button5} ${incr?null:styles["wwwch5"]}`} onClick={() => {
+            handleClick5()
+            animateChange2()
+          }}
+          >+5</button>
         </div>
 
         {/* We add multiple class in next like that */}
