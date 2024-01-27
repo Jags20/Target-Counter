@@ -30,7 +30,8 @@
   align-items: inherit;
   /* display: flex; */
   /* flex-direction: column; */
-  position: relative;
+  position: fixed;
+  top: 0;
   /* justify-content: space-between; */
   font-size: 2.5rem;
   font-weight: 900;
@@ -78,7 +79,7 @@
 }
 
 .meter_design{
-  width: 25rem;
+  width: 20rem;
   height: 2rem;
 }
      /* Set the fill color */
@@ -98,7 +99,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #163020;
 }
@@ -128,7 +129,7 @@
   background-image: radial-gradient(circle at center center, #311717, #bcc2db), 
                     repeating-radial-gradient(circle at center center, #d61111, #001cf3, 10px, transparent 20px, transparent 10px);
   background-blend-mode: multiply; */
-  font-size: 3rem;
+  font-size: 2rem;
   color: #163020;
   text-shadow: 3px 5px 3px grey;
   /* display: none; */
