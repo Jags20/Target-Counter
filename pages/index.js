@@ -51,6 +51,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+      <div className={styles.circle9}></div>
+      <div className={styles.circle8}></div>
+      <div className={styles.circle7}></div>
+      <div className={styles.circle6}></div>
+      <div className={styles.circle5}></div>
+      {/* <div className={styles.circle5}></div> */}
+      {/* <div className={styles.circle5}></div> */}
         <div className={styles.description}>
           <div className={styles.hdp1}></div>
         <p className={styles.heading}>Count Your Progress</p>
@@ -108,6 +115,10 @@ export default function Home() {
         </div>
         </div>
         <div className={styles.outer_line}>
+        <div className={styles.circle0}></div>
+          <div className={styles.circle}></div>
+          <div className={styles.circle1}></div>
+          <div className={styles.circle2}></div>
           <div className={styles.center}>
             <b className={styles.b}>{count}</b>
           </div>
