@@ -65,7 +65,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
       <div className={styles.circle9}></div>
       <div className={styles.circle8}></div>
-      <div className={styles.circle7}></div>
+      {/* <div className={styles.circle7}></div> */}
       <div className={styles.circle6}></div>
       <div className={styles.circle5}></div>
       {/* <div className={styles.circle5}></div> */}
