@@ -180,7 +180,7 @@ export default function Home() {
           user()
         }}
         >Reset</button>
-        <p className={styles.footer_menu}>Made with Love ❤️</p>
+        <p className={styles.footer_menu}>Made with Love <span>By JAG</span> ❤️</p>
 
       </main>
     </>
