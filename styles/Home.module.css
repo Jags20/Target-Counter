@@ -106,7 +106,7 @@
   font-weight: 500;
   color: #EEDF7A20;
   position: relative;
-  top: 64vh;
+  top: 54vh;
 }
 
 .description a {
@@ -438,12 +438,11 @@
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
   /* background-blend-mode: multiply; */
   background-image: repeating-conic-gradient(
-      from 60deg,
     #A04747 , #D8A25E 10% , #D8A25E 10% );
   /* background-image: repeating-radial-gradient(#000 20%, #212121 15%, #3D3D3D 25%); */
-  height: 25vh;
-  width: 30vw;
-  border-radius: 25%;
+  height: 250px;
+  width: 300px;
+  border-radius: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -595,11 +594,6 @@
   margin: 50px;
 }
 
-
-.button_cont{
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
 .buttonNeg{
   margin-right: 30px;
   padding: 10px 30px 10px 30px;
@@ -721,8 +715,11 @@
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
   /* background-blend-mode: multiply; */
   color: white;
-  /* border: none; */
-  border-radius: 8%;
+  position: sticky;
+  bottom: 100px;
+  width: 40vw;
+  border: none;
+  /* border-radius: 8%; */
 }
 .button0:hover {
   /* box-shadow: 5px 10px 8px #f00404; */
