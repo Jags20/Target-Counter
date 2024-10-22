@@ -437,11 +437,13 @@
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
   /* background-blend-mode: multiply; */
-  background-image: repeating-radial-gradient(#A04747 , #D8A25E 10% , #D8A25E 15% );
+  background-image: repeating-conic-gradient(
+      from 60deg,
+    #A04747 , #D8A25E 10% , #D8A25E 10% );
   /* background-image: repeating-radial-gradient(#000 20%, #212121 15%, #3D3D3D 25%); */
-  height: 45vh;
-  width: 45vw;
-  border-radius: 70%;
+  height: 25vh;
+  width: 30vw;
+  border-radius: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
