@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -63,22 +64,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-      <div className={styles.circle9}></div>
-      <div className={styles.circle8}></div>
+      {/* <div className={styles.circle9}></div> */}
+      {/* <div className={styles.circle8}></div> */}
       {/* <div className={styles.circle7}></div> */}
-      <div className={styles.circle6}></div>
-      <div className={styles.circle5}></div>
+      {/* <div className={styles.circle6}></div> */}
+      {/* <div className={styles.circle5}></div> */}
       {/* <div className={styles.circle5}></div> */}
       {/* <div className={styles.circle5}></div> */}
         <div className={styles.description}>
           <div className={styles.hdp1}></div>
         <p className={styles.heading}>Count Your Progress</p>
-        <span className={styles.name}>{name}</span>
+        <span className={styles.name}>Welcome {name}</span>
            <div className={styles.hdp2}></div>
         </div>
-        
+        <meter value={count} max="240" className={styles.meter_design}></meter>
+     
       <div className={styles.congo}>
-      <meter value={count} max="240" className={styles.meter_design}></meter>
       <div>
           {count <0 ? (
             <p>Bhaisahab ye kis line m aa gye hain ap</p>
@@ -173,6 +174,7 @@ export default function Home() {
           {/* <button>hrrrrrr</button> */}
         {/* </div> */}
         
+        
         <button className={styles.button0} 
         // onClick={zero}
         onClick = { () => {
@@ -180,6 +182,24 @@ export default function Home() {
           user()
         }}
         >Reset</button>
+
+
+        <div className={styles.diya1}>
+          <Image
+            src="/diw.gif"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className={styles.diya2}>
+          <Image
+            src="/diw.gif"
+            width={100}
+            height={100}
+          />
+        </div>
+
+        
         <p className={styles.footer_menu}>Made with Love <span>By JAG</span> ❤️</p>
 
       </main>
