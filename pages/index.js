@@ -184,20 +184,20 @@ export default function Home() {
         >Reset</button>
 
 
-        <div className={styles.diya1}>
+         <div className={styles.diya1}>
           <Image
-            src="/diw.gif"
+            src="/ny-571.gif"
             width={100}
             height={100}
           />
         </div>
         <div className={styles.diya2}>
           <Image
-            src="/diw.gif"
+            src="/ny-571.gif"
             width={100}
             height={100}
           />
-        </div>
+        </div> 
 
         
         <p className={styles.footer_menu}>Made with Love <span>By JAG</span> ❤️</p>

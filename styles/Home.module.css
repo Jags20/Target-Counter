@@ -8,7 +8,12 @@
   height: 100vh;
   position: relative;
   /* background: rgb(2,0,36); */
-  background-color:#343131;
+  /* background-color:#343131; */
+  background-image: url("/catt.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   /* background-color: rgb(255, 255, 255); */
   /* opacity: 0.8; */
   /* background-image: url(../public/bck.gif); */
@@ -18,7 +23,8 @@
                     /* repeating-radial-gradient(circle at center center, #000000, #000000, 10px, transparent 20px, transparent 10px); */
   background-blend-mode: multiply;
   /* background-blend-mode:luminosity; */
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,4,4,1) 35%, rgba(0,212,255,1) 100%); */
+  /* background: linear-gradient(90deg, rgba(2,0,36,1)file:///home/aditya/Downloads/catt.jpeg
+   0%, rgba(142,4,4,1) 35%, rgba(0,212,255,1) 100%); */
   /* background-color: black; */
   /* animation:10s infinite anim; */
 }
@@ -437,8 +443,8 @@
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
   /* background-blend-mode: multiply; */
-  background-image: repeating-conic-gradient(
-    #A04747 , #D8A25E 10% , #D8A25E 10% );
+  /* background-image: repeating-conic-gradient(
+    #A04747 , #D8A25E 10% , #D8A25E 10% ); */
   /* background-image: repeating-radial-gradient(#000 20%, #212121 15%, #3D3D3D 25%); */
   height: 250px;
   width: 300px;
@@ -450,6 +456,7 @@
 	        /* animation: heartbeat 2.5s ease-in-out infinite both; */
           /* animation: circle 6s linear infinite; */
 }
+
 
  /* @-webkit-keyframes heartbeat {
   from {
@@ -530,6 +537,7 @@
   width: 100px;
   border-radius: 50%;
   background-color: white;
+  opacity: 0.3;
   /* padding: 1.4rem 8.5rem 1.4rem 8.5rem; */
   font-size: 200%;
   color: rgb(0, 0, 0);
@@ -600,7 +608,7 @@
   font-size: larger;
   /* background-color: red; */
   /* background-size: 3em 3em; */
-  background-color: #D8A25E20;
+  background-color: black;
   /* opacity: 0.8; */
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
@@ -624,7 +632,7 @@
   font-size: larger;
   /* background-color: rgb(138, 126, 16); */
   /* background-size: 3em 3em; */
-  background-color: #D8A25E20;
+  background-color: black;
   /* opacity: 0.8; */
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
@@ -645,7 +653,7 @@
   font-size: larger;
   /* background-color: rgb(59, 16, 138); */
   /* background-size: 3em 3em; */
-  background-color: #D8A25E20;
+  background-color: black;
   /* opacity: 0.8; */
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
@@ -666,7 +674,7 @@
   font-size: larger;
   /* background-color: rgb(3, 148, 51); */
   /* background-size: 3em 3em; */
-  background-color: #D8A25E20;
+  background-color: black;
   /* opacity: 0.8; */
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
@@ -687,7 +695,7 @@
   font-size: larger;
   /* background-color: cyan; */
   /* background-size: 3em 3em; */
-  background-color: #D8A25E20;
+  background-color: black;
   /* opacity: 0.8; */
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
@@ -709,7 +717,7 @@
   background-size: 3em 3em;
   margin-bottom: 5px;
   border: 1px solid black;
-  background-color: #D8A25E20;
+  background-color: black;
   opacity: 0.5;
   /* background-image: radial-gradient(circle at center center, #f7d9d9, #e5221b),  */
                     /* repeating-radial-gradient(circle at center center, #0f0d0d, #000000, 10px, transparent 20px, transparent 10px); */
